@@ -17,3 +17,9 @@ print('\n')
 for per in list_ :
     if re.findall('an$',per['nombre']):
         print(per)
+
+list_web = ['google.com','ed.team','platzi.com','google.es']
+
+for web in list_web :
+    if re.findall('.team$',web) :
+        print(web)
