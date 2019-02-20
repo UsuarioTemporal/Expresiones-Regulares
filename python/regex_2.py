@@ -7,3 +7,4 @@ print(patron.search("dasda1sdas23w342asd43"))
 
 if re.search('[A-Z][0-9].*$','asdasd asdasd SDASD3'):
     print('Encontrado')
+print(re.sub(r"\d",'-','asdfasdasd@33432dfsdfs234d34d4e4ed3'))
