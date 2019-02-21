@@ -5,8 +5,6 @@ import java.util.LinkedList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javafx.scene.shape.PathElement;
-
 public class Regex_4 {
     public static void main(String[] args) {
         LinkedList<Persona> list = new LinkedList<>();
@@ -21,16 +19,19 @@ public class Regex_4 {
         list.add(new Persona("Abel"));
         list.add(new Persona("Ana"));
 
-        String search_1 ="as%";
+        String search_1 ="%as%";
         Pattern pr;
         // usando lógica de base de datos
         if(search_1.substring(search_1.length()-1).equals("%")
-            && search_1.substring(0).equals("%")){
-            pr = Pattern.compile("");
-        }else if(search_1.substring(0).equals("%")){
-            pr = Pattern.compile("^("+search_1.substring(0,search_1.length()-1)+")[a-z]*");
+            && search_1.substring(0,1).equals("%")){
+            search_1 = search_1.substring(1, search_1.length()-1);
+            pr=Pattern.compile("("+search_1+")[a-z]*");
+        }else if(search_1.substring(0,1).equals("%")){
+            pr = Pattern.compile("^("+search_1+")[a-z]*");
+            System.out.println("sadasd1");
         }else{
-            pr = Pattern.compile("[a-z]*("+search_1.substring(0,search_1.length()-1)+")$");
+            search_1 = search_1.substring(0,search_1.length()-1);
+            pr = Pattern.compile("[a-z]*("+search_1+")$");
         }
         list.forEach(p->{
             Matcher mt = pr.matcher(p.getNombre());
