@@ -21,6 +21,28 @@ public class Regex_2 {
         System.out.println(validarNumeroEnteroPositivo("texto"));
         System.out.println(validarNumeroEnteroPositivo("-156"));
         System.out.println(validarNumeroEnteroPositivo("452"));
+
+        // validar si es un número real
+        System.out.println(validarNumeroReal("155"));
+        System.out.println(validarNumeroReal("-155"));
+        System.out.println(validarNumeroReal(".155"));
+        System.out.println(validarNumeroReal("-.155"));
+        System.out.println(validarNumeroReal("-1."));
+        System.out.println(validarNumeroReal("-1,"));
+        System.out.println(validarNumeroReal("-1,sad"));
+        System.out.println(validarNumeroReal("-1,24"));
+        System.out.println(validarNumeroReal("1.24"));
+
+
+        // validar si es un número real positivo
+
+        System.out.println(validarNumeroRealPositivo("546"));
+        System.out.println(validarNumeroRealPositivo(".546"));
+        System.out.println(validarNumeroRealPositivo("-4.546"));
+        System.out.println(validarNumeroRealPositivo("4.546"));
+        System.out.println(validarNumeroRealPositivo("4.546"));
+
+        
     }
     static boolean validarNumeroEntero(String texto){
         return texto.matches("^-?[0-9]+$");
@@ -32,6 +54,19 @@ public class Regex_2 {
         return texto.matches("^-[0-9]+$");
     }
     static boolean validarNumeroReal(String texto){
-        return texto.matches("^-?([0-9])*[\\.,]?[0-9]*$");
+        return texto.matches("^-?([0-9])*[\\.,]?[0-9]+$");
+    }
+    static boolean validarNumeroRealPositivo(String texto){
+        return texto.matches("^([0-9])*[\\.,]?[0-9]+$");
+    }
+    static boolean validarNumeroRealNegativo(String texto){
+        return texto.matches("^-([0-9])*[\\.,]?[0-9]+$");
+    }
+
+    static boolean validarDoublePositivo(String texto){
+        return texto.matches("^[0-9]*[\\.,][0-9]+$");
+    }
+    static boolean validarDoubleNegativo(String texto){
+        return texto.matches("^-[0-9]*[\\.,][0-9]+$");
     }
 }
