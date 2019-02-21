@@ -28,6 +28,12 @@ hola{3,5} ... esto significara que el elemento que le antecede aparacesca al men
 
 Se utilizan para agrupar a los patrones esto es muy utilizados con los cuantificadores y alternaciones
 
+[Referencias](https://maugelves.com/expresiones-regulares-en-php/)
+
+[Referencias](http://puntocomnoesunlenguaje.blogspot.com/2013/07/ejemplos-expresiones-regulares-java-split.html)
+
+[Referencias](https://jarroba.com/busqueda-de-patrones-expresiones-regulares/)
+
 ```python
     # Autor : Thom Maurick Roman Aguilar
 ```
