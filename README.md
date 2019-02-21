@@ -14,7 +14,9 @@ Es una barra vertical que separá las alternativas
 Cuantos caracteres se va a especificar, es decir se usa para especificar la cantidad de ocurrencias de determinado elemento.
 
 Ejm :
-hola? ... esto significara que el elemeneto que le antecede(a) puede aparecer cero o sola una vez
+hola? ... esto significara que el elemento que le antecede(a) puede aparecer cero o sola una vez
+
+hola* ... esto significara que el elemento que le antecede puede aparecer cero o muchas veces
 
 ```python
     # Autor : Thom Maurick Roman Aguilar
