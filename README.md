@@ -24,6 +24,10 @@ hola{3,} ... esto significara que el elemento que le antecede aparacesca al meno
 
 hola{3,5} ... esto significara que el elemento que le antecede aparacesca al menos 3 o a lo mas 5
 
+## **Agrupación('()')**
+
+Se utilizan para agrupar a los patrones esto es muy utilizados con los cuantificadores y alternaciones
+
 ```python
     # Autor : Thom Maurick Roman Aguilar
 ```
