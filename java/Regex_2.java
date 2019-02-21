@@ -42,7 +42,7 @@ public class Regex_2 {
         System.out.println(validarNumeroRealPositivo("4.546"));
         System.out.println(validarNumeroRealPositivo("4.546"));
 
-        
+    
     }
     static boolean validarNumeroEntero(String texto){
         return texto.matches("^-?[0-9]+$");
@@ -68,5 +68,8 @@ public class Regex_2 {
     }
     static boolean validarDoubleNegativo(String texto){
         return texto.matches("^-[0-9]*[\\.,][0-9]+$");
+    }
+    static boolean validarNombreComplejo(String texto){
+        return texto.matches("^([A-Z]{1}[a-z]{2,}[ ]?){1,2}$");
     }
 }
