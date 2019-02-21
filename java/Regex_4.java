@@ -25,11 +25,11 @@ public class Regex_4 {
         // usando lógica de base de datos
         if(search_1.substring(search_1.length()-1).equals("%")
             && search_1.substring(0,1).equals("%")){
-            search_1 = search_1.substring(1, search_1.length()-1);
+            search_1 = search_1.substring(1, search_1.length()-2);
             pr=Pattern.compile("[a-zA-Z]*("+search_1+")[a-z]*");
         }else if(search_1.substring(0,1).equals("%")){
+            search_1 = search_1.substring(1, search_1.length()-1);
             pr = Pattern.compile("[a-zA-Z]*("+search_1+")$");
-            System.out.println("sadasd1");
         }else{
             search_1 = search_1.substring(0,search_1.length()-1);
             pr = Pattern.compile("^("+search_1+")[a-z]*");
