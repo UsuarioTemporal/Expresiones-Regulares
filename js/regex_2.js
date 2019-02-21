@@ -5,3 +5,4 @@
 let patron = new RegExp('ab+c')
 
 // esta expresion ofrece la compilacion en tiempo de compilacion
+// utilice esta expresion cuando el patron cambiara

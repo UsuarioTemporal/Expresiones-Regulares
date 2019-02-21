@@ -34,6 +34,8 @@ Se utilizan para agrupar a los patrones esto es muy utilizados con los cuantific
 
 [Referencias](https://jarroba.com/busqueda-de-patrones-expresiones-regulares/)
 
+[Referencias](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions#special-word-boundary)
+
 ```python
     # Autor : Thom Maurick Roman Aguilar
 ```
