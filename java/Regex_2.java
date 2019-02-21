@@ -31,4 +31,7 @@ public class Regex_2 {
     static boolean validarNumeroEnteroNegativo(String texto){
         return texto.matches("^-[0-9]+$");
     }
+    static boolean validarNumeroReal(String texto){
+        return texto.matches("^-?([0-9])*[\\.,]?[0-9]*$");
+    }
 }
