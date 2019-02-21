@@ -19,13 +19,14 @@ public class Regex_4 {
         list.add(new Persona("Abel"));
         list.add(new Persona("Ana"));
 
-        String search_1 ="A%";
+        String search_1 ="%J%";
         search_1=search_1.toLowerCase();
         Pattern pr;
         // usando lógica de base de datos
         if(search_1.substring(search_1.length()-1).equals("%")
             && search_1.substring(0,1).equals("%")){
-            search_1 = search_1.substring(1, search_1.length()-2);
+            search_1 = search_1.substring(1, search_1.length()-1);
+            System.out.println(search_1);
             pr=Pattern.compile("[a-zA-Z]*("+search_1+")[a-z]*");
         }else if(search_1.substring(0,1).equals("%")){
             search_1 = search_1.substring(1, search_1.length()-1);
