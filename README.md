@@ -36,6 +36,10 @@ Se utilizan para agrupar a los patrones esto es muy utilizados con los cuantific
 
 [Referencias](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions#special-word-boundary)
 
+[Referencias](https://stackoverflow.com/questions/9444876/what-is-replace-ig-doing)
+
+[Referencias](https://www.adictosaltrabajo.com/2015/01/29/regexsam/)
+
 ```python
     # Autor : Thom Maurick Roman Aguilar
 ```
